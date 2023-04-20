@@ -1,0 +1,60 @@
+/* Sub banner */
+.sub-banner {
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.sub-banner .sub-banner-item {
+  position: relative;
+  /* background: url("../images/sub-banner/01.png") no-repeat; */
+}
+
+.sub-banner .sub-banner-item .sub-banner-hover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e9d4cd;
+  opacity: 0.3;
+  display: none;
+}
+
+.sub-banner .sub-banner-item:hover .sub-banner-hover {
+  display: block;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+.sub-banner-item > span:hover {
+  display: block;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+.sub-banner .sub-banner-item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-weight: 600;
+}
+@media only screen and (max-width: 960px) {
+  .sub-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-banner-item {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}

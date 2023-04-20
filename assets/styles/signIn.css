@@ -1,0 +1,91 @@
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 370px;
+  height: 100vh;
+  background-color: var(--background-white);
+  padding: 30px;
+  transform: translateX(370px);
+  transition: all 0.3s linear;
+}
+
+.login h2 {
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.login-close-container {
+  display: flex;
+  justify-content: end;
+}
+
+.close-login {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.close-login:hover {
+  opacity: 0.6;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.login-form label span {
+  color: var(--text-red);
+}
+
+.login-form label:last-of-type {
+  margin-top: 1.25rem;
+}
+
+.login-form input {
+  padding: 1rem 0.3rem;
+  transition: all 0.3s ease;
+  margin-top: 0.75rem;
+  border: 1px solid #cbcbcb;
+}
+
+.login-button,
+.signUp-button {
+  font-family: Poppins-Bold;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--other-background-gray);
+  font-size: 0.875rem;
+}
+
+.login a {
+  font-size: 0.75rem;
+  text-decoration: underline;
+  margin: 1.3rem auto;
+}
+
+.signUp-button {
+  color: var(--text-white);
+  background-color: var(--secondary-background-grey);
+}

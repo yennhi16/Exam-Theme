@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/assets/styles/_base.css" />
+  <link rel="stylesheet" href="/assets/styles/header.css" />
+  <link rel="stylesheet" href="/assets/styles/subMenu.css" />
+  <link rel="stylesheet" href="/assets/styles/carousel.css" />
+  <link rel="stylesheet" href="/assets/styles/newProducts.css" />
+
+  <link rel="stylesheet" href="/assets/styles/signIn.css" />
+  <link rel="stylesheet" href="/assets/styles/cart.css" />
+  <link rel="stylesheet" href="/assets/styles/footer.css" />
+  <link rel="stylesheet" href="/assets/styles/instagram.css" />
+  <link rel="stylesheet" href="/assets/styles/utils.css" />
+  <title>Ella - Home Page</title>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Top message -->
+    <marquee bgcolor="#ffe8e8" height="26px">
+      <div>
+        <p class="marquee-text">
+          ⚡SPECIAL OFFER: ENJOY 3 MONTHS OF SHOPIFY FOR
+          <strong>$1/MONTH</strong>
+        </p>
+        <p class="marquee-text">
+          ⚡SPECIAL OFFER: ENJOY 3 MONTHS OF SHOPIFY FOR
+          <strong>$1/MONTH</strong>
+        </p>
+        <p class="marquee-text">
+          ⚡SPECIAL OFFER: ENJOY 3 MONTHS OF SHOPIFY FOR
+          <strong>$1/MONTH</strong>
+        </p>
+        <p class="marquee-text">
+          ⚡SPECIAL OFFER: ENJOY 3 MONTHS OF SHOPIFY FOR
+          <strong>$1/MONTH</strong>
+        </p>
+      </div>
+    </marquee>
+    <!-- Top nav -->
+    <section id="top-nav">
+      <div class="top-nav-container">
+        <!-- Left -->
+        <a href="/" class="logo-img">
+          <img src="../assets/images/logo.png" alt="Ella-Logo" />
+        </a>
+
+        <!-- Right -->
+        <div class="top-nav-right">
+          <p>Free shipping on All Orders. No Minimum Purchase</p>
+
+          <div class="top-nav-menu">
+            <div class="top-nav-menu-item" onclick="handleDisplayCart()">
+              <span class="iconify shopping-bag" data-icon="material-symbols:shopping-bag-outline"></span>
+              <p>Shopping Cart</p>
+              <p class="cart-quantity">0</p>
+            </div>
+            <div class="top-nav-menu-item">
+              <span class="iconify shopping-bag" data-icon="mdi:heart-outline"></span>
+              <p>My Wish Lists</p>
+            </div>
+            <div class="top-nav-menu-item" onclick="handleDisplayLogin()">
+              <p>Sign In or Create an account</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main menu -->
+    <section id="main-menu">
+      <nav class="main-menu-container">
+        <!-- Begin:nav -->
+        <ul id="nav">
+          <li><a href="#">New In</a></li>
+          <li><a href="#">Trend</a></li>
+          <li>
+            <a href="#" class="link-sub-title">
+              Collections
+              <p class="link-sub-title-detail-first">sale</p>
+              <div class="triangle-bottom-first"></div>
+            </a>
+          </li>
+          <li><a href="#">Lookbook</a></li>
+          <li>
+            <a href="#" class="link-sub-title">
+              Demo
+              <p class="link-sub-title-detail-second">new</p>
+              <div class="triangle-bottom-second"></div>
+            </a>
+          </li>
+          <li><a href="#">Shop Instagram</a></li>
+          <li>
+            <a href="#">
+              Blog
+              <span class="iconify more-icon" data-icon="material-symbols:arrow-drop-down-rounded"></span>
+            </a>
+            <ul class="subnav">
+              <li>
+                <a href="#">Blog Default Layout</a>
+                <hr />
+              </li>
+
+              <li>
+                <a href="#">Blog with Small Image</a>
+                <hr />
+              </li>
+              <li>
+                <a href="#">Blog Mansory</a>
+                <hr />
+              </li>
+              <li>
+                <a href="#">Blog Full-width</a>
+                <hr />
+              </li>
+              <li>
+                <a href="#">Blog Post with LookBook</a>
+                <hr />
+              </li>
+              <li>
+                <a href="#">Blog Post with Widget</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="link-sub-title">Brands
+              <p class="link-sub-title-detail-third">hot</p>
+              <div class="triangle-bottom-third"></div>
+            </a>
+          </li>
+          <li><a href="#">Faqs</a></li>
+        </ul>
+        <!-- End:nav -->
+
+        <!-- Begin: Mobile-menu button -->
+        <div id="mobile-menu" class="menu-btn-mobile">
+          <span class="iconify" data-icon="ri:menu-3-line"></span>
+        </div>
+        <!-- End: Mobile-menu button -->
+
+        <!-- Begin: Search button -->
+        <div class="search-btn">
+          <span class="iconify search-icon" data-icon="ic:baseline-saved-search"></span>
+        </div>
+        <!-- End: Search button -->
+      </nav>
+    </section>
+  </header>
+
+  <!-- Carousel -->
+  <section class="carousel-section-slides">
+    <div class="carousel-section-slide fade">
+      <img src="../assets/images/large-banner/slide1.jpg" alt="Slide 1" />
+      <div class="carousel-section-content primary-content">
+        <h2 class="carousel-section-title primary-title">COSMOPOLIS</h2>
+        <p class="carousel-section-subtitle primary-subtitle">
+          Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo
+          lacus meleifend menean diverra loremous.
+        </p>
+        <button class="carousel-section-btn primary-button">SHOP NOW</button>
+      </div>
+    </div>
+    <div class="carousel-section-slide fade">
+      <img src="../assets/images/large-banner/slide2-2-bkg.jpg" alt="Slide 2" />
+      <div class="carousel-section-content secondary-content">
+        <h2 class="carousel-section-title secondary-title">SPECIAL OFFERS</h2>
+        <h1 class="secondary-sale">SALE</h1>
+        <p class="carousel-section-subtitle secondary-subtitle">
+          UP TO 70% OFF ON SELECTED ITEMS. LIMITED-TIME ONLY
+        </p>
+        <button class="carousel-section-btn secondary-button">
+          SHOP NOW
+        </button>
+      </div>
+    </div>
+    <div class="carousel-section-slide fade">
+      <img src="../assets/images/large-banner/slide3-1-bkg.jpg" alt="Slide 3" />
+      <div class="carousel-section-content tertiary-content">
+        <h2 class="carousel-section-title tertiary-title">LOREMOUS</h2>
+        <p class="carousel-section-subtitle tertiary-subtitle">
+          Quisquemos sodales suscipit tortor ditaemcos condimentum lacus
+          meleifend menean diverra lorem comodous.
+        </p>
+        <button class="carousel-section-btn tertiary-button">
+          SHOP THE COLLECTION
+        </button>
+      </div>
+    </div>
+    <!-- <a class="prev-button" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next-button" onclick="plusSlides(1)">&#10095;</a> -->
+    <a class="prev-button" onclick="plusSlides(-1)"><span class="iconify"
+        data-icon="ic:round-arrow-back-ios"></span></a>
+    <a class="next-button" onclick="plusSlides(1)"><span class="iconify"
+        data-icon="ic:round-arrow-forward-ios"></span></a>
+    <!-- The dots/circles -->
+    <div class="carousel-section-dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
+  <!-- Sub banner -->
+  <section class="sub-banner">
+    <div class="sub-banner-item">
+      <img src="../assets/images/sub-banner/01.png" alt="sub-banner-01" />
+      <span>EDITOR'S PICK</span>
+      <div class="sub-banner-hover"></div>
+    </div>
+    <div class="sub-banner-item">
+      <img src="../assets/images/sub-banner/02.png" alt="sub-banner-02" />
+      <span>SHOES</span>
+      <div class="sub-banner-hover"></div>
+    </div>
+    <div class="sub-banner-item">
+      <img src="../assets/images/sub-banner/03.png" alt="sub-banner-03" />
+      <span>ACCESSORIES</span>
+      <div class="sub-banner-hover"></div>
+    </div>
+  </section>
+
+  <!-- New products -->
+  <section class="new-products">
+    <div class="new-products-head">
+      <div class="line"></div>
+      <h3>new arrival</h3>
+      <div class="line"></div>
+    </div>
+
+    <div class="new-products-view-all">View all</div>
+
+    <div class="new-products-row">
+      <div class="new-products-row-item">
+        <div class="item-icon-fav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3Z" />
+          </svg>
+        </div>
+        <!-- <div class="item-icon-fav-eye">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 6.5a9.77 9.77 0 0 1 8.82 5.5c-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12A9.77 9.77 0 0 1 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 5a2.5 2.5 0 0 1 0 5a2.5 2.5 0 0 1 0-5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5s4.5-2.02 4.5-4.5s-2.02-4.5-4.5-4.5z"
+              />
+            </svg>
+          </div> -->
+        <div class="item-img">
+          <img src="../assets/images/new-products/row1-1.png" alt="new-products-01" class="img-product" />
+          <div class="item-button-hover"><span>ADD TO CART</span></div>
+        </div>
+
+        <div class="item-description">
+          <h3 class="item-description-head">SOLDING</h3>
+          <p class="item-description-text">
+            Naminos Demmntus A Milance - Pattern
+          </p>
+          <div class="item-price">$86.000-$99.00</div>
+          <div class="item-pick-color">
+            <div class="item-pick item-pick-color-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+            <div class="item-pick item-pick-color-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+            <div class="item-pick item-pick-color-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-products-row-item">
+        <div class="item-icon-fav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3Z" />
+          </svg>
+        </div>
+        <div class="item-img">
+          <img src="../assets/images/new-products/row1-2.png" alt="new-products-01" class="img-product" />
+          <div class="item-button-hover"><span>ADD TO CART</span></div>
+        </div>
+
+        <div class="item-description">
+          <h3 class="item-description-head">TOMORROW</h3>
+          <p class="item-description-text">
+            Dinterdum Pretium Condimento - Pattern
+          </p>
+          <div class="item-price">$139.000-$189.00</div>
+          <div class="item-pick-color">
+            <div class="item-pick item-pick-color-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#000"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+            <div class="item-pick item-pick-color-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#e8e8e8"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+            <div class="item-pick item-pick-color-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#4b6cc0"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+            <div class="item-pick item-pick-color-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#13c89c"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+            <div class="item-pick item-pick-color-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#fff100"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+            <div class="item-pick item-pick-color-3">+1</div>
+          </div>
+        </div>
+      </div>
+      <div class="new-products-row-item">
+        <div class="item-icon-fav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3Z" />
+          </svg>
+        </div>
+        <div class="item-img">
+          <img src="../assets/images/new-products/row1-3.png" alt="new-products-01" class="img-product" />
+          <div class="item-button-hover"><span>ADD TO CART</span></div>
+        </div>
+
+        <div class="item-description">
+          <h3 class="item-description-head">PAUL SMITH</h3>
+          <p class="item-description-text">
+            Magnis Darturien Metro Lanicis - Black
+          </p>
+          <div class="item-price">$86.000</div>
+          <div class="item-pick-color">
+            <div class="item-pick item-pick-color-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#000"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-products-row-item">
+        <div class="item-icon-fav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3Z" />
+          </svg>
+        </div>
+        <div class="item-img">
+          <img src="../assets/images/new-products/row1-4.png" alt="new-products-01" class="img-product" />
+          <div class="item-button-hover"><span>ADD TO CART</span></div>
+        </div>
+
+        <div class="item-description">
+          <h3 class="item-description-head">DONATELLO</h3>
+          <p class="item-description-text">
+            Loremecus Saliducar A Cosmopolito - Pattern
+          </p>
+          <div class="item-price">$86.000-$99.00</div>
+          <div class="item-pick-color">
+            <div class="item-pick item-pick-color-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#000"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+            <div class="item-pick item-pick-color-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#e8e8e8"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+            <div class="item-pick item-pick-color-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="#13c89c"
+                  d="M12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0 0q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q3.35 0 5.675 2.325T20 12q0 3.35-2.325 5.675T12 20Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new-products-row-show-more">
+      <div class="new-products-show-more-button">SHOW MORE</div>
+    </div>
+  </section>
+
+  <!-- Instagram -->
+  <section class="instagram">
+    <div class="instargram-wrapper">
+      <div class="instagram-title">
+        <span class="iconify logo-instagram" data-icon="ph:instagram-logo"></span>
+        <span>#Ella On Instagram</span>
+      </div>
+      <div class="instagram-title-sub">
+        Phasellus lorem malesuada ligula pulvinar commodo maecenas
+      </div>
+      <div class="instagram-list-image">
+        <div class="instagram-item-image">
+          <img src="../assets/images/instagram/01.png" alt="image1" />
+        </div>
+        <div class="instagram-item-image">
+          <img src="../assets/images/instagram/02.png" alt="image2" />
+        </div>
+        <div class="instagram-item-image">
+          <img src="../assets/images/instagram/03.png" alt="image3" />
+        </div>
+        <div class="instagram-item-image">
+          <img src="../assets/images/instagram/04.png" alt="image4" />
+        </div>
+        <div class="instagram-item-image">
+          <img src="../assets/images/instagram/05.png" alt="image5" />
+        </div>
+        <div class="instagram-arrow left">
+          <span class="iconify" data-icon="material-symbols:arrow-forward-ios" style="color: #323232"
+            data-rotate="180deg"></span>
+        </div>
+        <div class="instagram-arrow right">
+          <span class="iconify" data-icon="material-symbols:arrow-forward-ios" style="color: #323232"></span>
+        </div>
+      </div>
+      <div class="instagram-btn">
+        <button class="instagram-button">VIEW GALLERY</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer-top">
+      <div class="footer-links-container">
+        <div class="footer-links-column">
+          <h3>SHOP</h3>
+          <a href="#">New in</a>
+          <a href="#">Women</a>
+          <a href="#">Men</a>
+          <a href="#">Shoes</a>
+          <a href="#">Bags & Accessories</a>
+          <a href="#">Top Brands</a>
+          <a href="#">Sale & Special Offers</a>
+          <a href="#">Lookbook</a>
+        </div>
+        <div class="footer-links-column">
+          <h3>INFORMATION</h3>
+          <a href="#">About</a>
+          <a href="#">Customer Service</a>
+          <a href="#">Reward Program</a>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-links-column">
+          <h3>CUSTOMER SERVICE</h3>
+          <a href="#">Search Terms</a>
+          <a href="#">Advanced Search</a>
+          <a href="#">Orders and Returns</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Theme FAQs</a>
+          <a href="#">Consultant</a>
+          <a href="#">Store Locations</a>
+        </div>
+      </div>
+      <div class="footer-subcription-container">
+        <h3>NEWSLETTER SIGN UP</h3>
+        <p>
+          Sign up for exclusive updates,new arrival & insider only discounts
+        </p>
+        <div class="subcription-form">
+          <input type="text" name="email-input" id="email-input" placeholder="Email Address" />
+          <button>SUBMIT</button>
+        </div>
+        <div class="social-network-links">
+          <a href="">
+            <span class="iconify facebook-icon" data-icon="gg:facebook"></span>
+          </a>
+          <a href="">
+            <span class="iconify twitter-icon" data-icon="jam:twitter"></span>
+          </a>
+          <a href="">
+            <span class="iconify instagram-icon" data-icon="ant-design:instagram-outlined"></span>
+          </a>
+          <a href="">
+            <span class="iconify pinterest-link" data-icon="jam:pinterest"></span>
+          </a>
+          <a href="">
+            <span class="iconify snapchat-link" data-icon="ph:snapchat-logo-fill"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <hr color="#282828" />
+    <section class="footer-bottom">
+      <div class="footer-bottom-left">
+        <p class="copyright">
+          © 2014 Ella Demo. All Rights Reserved. Powered by Shopify.
+        </p>
+        <a class="reference">Shopify Themes by HaloThemes.com</a>
+      </div>
+      <div class="footer-bottom-right">
+        <img src="../assets/images/footer/payment-section.png" alt="Payment section" />
+      </div>
+    </section>
+  </footer>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Side login -->
+  <section class="login">
+    <div class="login-close-container">
+      <span class="iconify close-login" data-icon="ic:sharp-close" onclick="handleCloseLogin()"></span>
+    </div>
+
+    <h2>Sign In</h2>
+
+    <form action="" class="login-form">
+      <label for="">Email Address <span>*</span></label>
+      <input type="email" name="email" id="email" />
+      <label for="">Password <span>*</span></label>
+      <input type="password" name="password" id="password" />
+
+      <button class="login-button">LOGIN</button>
+      <a href="#">Forgot your password?</a>
+
+      <button class="signUp-button">CREATE ACCOUNT</button>
+    </form>
+  </section>
+
+  <!-- Side cart -->
+  <section class="cart">
+    <div class="cart-close-container">
+      <span class="iconify close-cart" data-icon="ic:sharp-close" onclick="handleCloseCart()"></span>
+    </div>
+    <h2>Shopping Cart</h2>
+    <p>3 items</p>
+    <p>Free shipping for all orders over $800.000</p>
+    <span>Your cart is empty</span>
+    <button>CHECKOUT</button>
+  </section>
+
+  <!-- Utils /scroll top, recent views/ -->
+  <section class="utils">
+    <div class="utils-container">
+      <div class="utils-item" onclick="handleDisplayRecentViews()">
+        <span class="iconify" data-icon="streamline:interface-time-rewind-back-return-clock-timer-countdown"
+          style="color: #323232" data-width="20" data-height="20"></span>
+      </div>
+      <div class="utils-item">
+        <span class="iconify" data-icon="material-symbols:share-outline" style="color: #323232" data-width="20"
+          data-height="20"></span>
+      </div>
+      <div class="utils-item" onclick="handleScrollTop()">
+        <span class="iconify" data-icon="ic:outline-arrow-upward" style="color: #323232" data-width="20"
+          data-height="20"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent views -->
+  <section class="recent-views-detail">
+    <span data-width="20" data-height="20" class="iconify arrow-down" data-icon="material-symbols:double-arrow-rounded"
+      onclick="collapseRecentViews()"></span>
+    <div class="recent-views-shoping-cart">
+      <span class="iconify shopping-bag" data-icon="material-symbols:shopping-bag-outline"></span>
+      <span class="shopping-bag-amount">0</span>
+    </div>
+    <div class="recent-views-products">
+      <span class="recent-views-head">RECENTLY VIEWED</span>
+      <span class="iconify arrow-up" data-icon="material-symbols:keyboard-arrow-up"></span>
+      <div class="recent-item recent-absolute">
+        <img src="../assets/images/new-products/row1-2.png" alt="" class="recent-views-products-img-first" />
+        <div class="recent-item-block">
+          <div class="recent-item-content">
+            <div class="recent-item-group">
+              <div class="recent-item-title">Donatello</div>
+              <div class="recent-item-des">Loremous saliduar a cos Lorem ipsum dolor sit.</div>
+              <div class="recent-item-price">
+                <span>from</span>
+                $86.00
+              </div>
+              <button class="recent-item-btn">Select Options</button>
+            </div>
+            <img src="../assets/images/new-products/row1-2.png" alt="" />
+          </div>
+        </div>
+
+      </div>
+      <div class="recent-item">
+        <img src="../assets/images/new-products/row1-2.png" alt="" class="recent-views-products-img-first" />
+        <div class="recent-item-block">
+          <div class="recent-item-content">
+            <div class="recent-item-group">
+              <div class="recent-item-title">Donatello</div>
+              <div class="recent-item-des">Loremous saliduar a cos Lorem ipsum dolor sit.</div>
+              <div class="recent-item-price">
+                <span>from</span>
+                $86.00
+              </div>
+              <button class="recent-item-btn">Select Options</button>
+            </div>
+            <img src="../assets/images/new-products/row1-2.png" alt="" />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <span class="iconify arrow-up" data-icon="material-symbols:keyboard-arrow-down-rounded"></span>
+    </div>
+    <div class="recent-views-scroll-top" onclick="handleScrollTop()">
+      <span class="iconify" data-icon="material-symbols:arrow-upward"></span>
+      <span>Top</span>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/menu.js"></script>
+  <script src="../scripts/carousel.js"></script>
+</body>
+
+</html>

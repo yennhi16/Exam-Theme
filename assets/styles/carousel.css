@@ -1,0 +1,244 @@
+.carousel-section-slides {
+  position: relative;
+}
+
+.carousel-section-slide {
+  display: none;
+}
+
+.carousel-section-slide img {
+  height: 720px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-section-dot-container {
+  position: absolute;
+  text-align: center;
+  bottom: 1rem;
+  width: 100%;
+}
+
+.prev-button,
+.next-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  margin: auto;
+  padding: 1.25rem;
+  color: #636a6a;
+  font-weight: bold;
+  font-size: 1.9rem;
+  transition: 0.6s ease;
+  border-radius: 100%;
+  border: 1px solid #636a6a;
+  user-select: none;
+}
+
+.prev-button {
+  left: 2rem;
+}
+
+.next-button {
+  right: 2rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(219, 219, 219, 0.538);
+  border-radius: 100%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #707979;
+  border-radius: 50%;
+  border: 1px solid #707979;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: transparent;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel-section-content {
+  position: absolute;
+  max-width: 1170px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.primary-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  left: 15%;
+}
+
+.primary-title {
+  position: relative;
+  font-size: 2.5rem;
+  font-family: Poppins-Bold;
+}
+
+.primary-title::after {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 2.5rem;
+  background-color: var(--background-black);
+}
+
+.primary-subtitle {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.primary-button {
+  font-family: Poppins-Bold;
+  padding: 1.125rem 3.375rem;
+  background-color: var(--background-black);
+  color: var(--text-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.secondary-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-white);
+  max-width: 545px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.secondary-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.secondary-sale {
+  position: relative;
+  font-size: 13.75rem;
+  line-height: 13.75rem;
+  font-family: Poppins-Bold;
+}
+
+.secondary-sale::after {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  left: -10%;
+  top: 15%;
+  width: 11px;
+  height: 110px;
+  background-color: var(--background-white);
+}
+
+.secondary-subtitle {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.secondary-button {
+  font-family: Poppins-Bold;
+  padding: 1rem 4rem;
+  background-color: transparent;
+  color: var(--text-white);
+  border: 1px solid var(--text-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.tertiary-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 545px;
+  right: 15%;
+}
+
+.tertiary-title {
+  position: relative;
+  font-size: 2.5rem;
+  font-family: Poppins-Bold;
+}
+
+.tertiary-title::after {
+  content: "";
+  position: absolute;
+  bottom: -0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 2.5rem;
+  background-color: var(--background-black);
+}
+
+.tertiary-subtitle {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.tertiary-button {
+  font-family: Poppins-Bold;
+  padding: 1.125rem 3.375rem;
+  background-color: var(--background-black);
+  color: var(--text-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+@media screen and (max-width: 480px) {
+  .carousel-section-btn{
+    padding: 0.7rem 2.5rem;
+  }
+  .prev-button{
+    display: none;
+  }
+  .next-button{
+    display: none;
+  }
+    .primary-content{
+      left: 0;
+    }
+        .carousel-section-content{
+          right: 0;
+        }
+  .secondary-sale{
+    font-size: 7rem;
+  }
+}

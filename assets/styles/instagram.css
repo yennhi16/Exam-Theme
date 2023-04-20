@@ -1,0 +1,138 @@
+.instagram {
+  background-color: #fafafa;
+}
+
+.instargram-wrapper {
+  /* width: fit-content; */
+}
+
+.instagram-title {
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.instagram-title span {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.logo-instagram {
+  width: 22px;
+  height: 22px;
+}
+
+.instagram-title-sub {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 42px;
+}
+
+.instagram-list-image {
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.instagram-item-image {
+  margin-left: 5px;
+}
+
+.instagram-item-image img {
+  width: 230px;
+  height: 230px;
+}
+
+.instagram-arrow {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #cbcbcb;
+  position: absolute;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.instagram-arrow.left {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.instagram-arrow.right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.instagram-arrow span {
+  width: 8px;
+  height: 13px;
+}
+
+.instagram-arrow.right span {
+  transform: rotateX(180deg);
+}
+
+.instagram-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-bottom: 70px;
+}
+
+.instagram-button {
+  width: 230px;
+  height: 46px;
+  background-color: #232323;
+  margin: 0 auto;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.876rem;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.instagram-button:hover {
+  border: 1px solid #232323;
+  color: #232323;
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 960px) {
+  .instagram-item-image img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .instagram-item-image img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .instagram-list-image {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .instagram-item-image:nth-child(4) {
+    display: none !important;
+  }
+    .instagram-item-image img {
+      width: 150px;
+      height: 150px;
+    }
+}
